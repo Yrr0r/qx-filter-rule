@@ -7,3 +7,7 @@ host-suffix,apple.com,direct
 
 # icloud mail
 host-suffix,me.com,direct 
+
+# skype does not need proxy 
+host-suffix,skype.com,direct
+host-suffix,skypeassets.com,direct
