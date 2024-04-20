@@ -11,3 +11,6 @@ host-suffix,me.com,direct
 # skype does not need proxy 
 host-suffix,skype.com,direct
 host-suffix,skypeassets.com,direct
+# also make microsoft not proxied because of skype
+host-suffix,microsoft.com,direct
+host-suffix,live.com,direct
