@@ -1,0 +1,23 @@
+# direct cn sites to cn
+
+# jd
+host-suffix,jd.com,direct
+host-suffix,jdcloud.com,direct
+
+# taobao and alibaba
+host-suffix,taobao.com,direct
+host-suffix,tmall.com,direct
+host-suffix,etao.com,direct
+host-suffix,alimama.com,direct
+host-suffix,alitrip.com,direct
+
+# tencent
+host-suffix,qq.com,direct
+host-suffix,tencent.com,direct
+host-suffix,weixin.com,direct
+
+# cdn for douyin and xigua shit
+host-suffix,snssdk.com,direct
+host-suffix,ixigua.com,direct
+host-suffix,pstatp.com,direct
+host-suffix,toutiao.com,direct
