@@ -6,6 +6,7 @@ host-suffix,jdcloud.com,direct
 
 # taobao and alibaba
 host-suffix,taobao.com,direct
+host-suffix,alicdn.com,direct
 host-suffix,tmall.com,direct
 host-suffix,etao.com,direct
 host-suffix,alimama.com,direct
