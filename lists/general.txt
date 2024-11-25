@@ -1,0 +1,25 @@
+
+@begin host-suffix direct
+
+# *.cn
+cn
+
+# get apple back to china
+apple.com
+
+# icloud mail
+me.com 
+
+# skype does not need proxy 
+skype.com
+skypeassets.com
+# also make microsoft not proxied because of skype
+microsoft.com
+live.com
+
+@end
+
+# All direct IP requests go direct, no proxy.
+@begin ip-cidr direct
+0.0.0.0/0
+@end

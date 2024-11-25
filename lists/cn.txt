@@ -1,0 +1,31 @@
+#  cn sites to cn
+
+@begin host-suffix direct
+
+# jd
+jd.com
+jdcloud.com
+
+# taobao and alibaba
+taobao.com
+alicdn.com
+tmall.com
+etao.com
+alimama.com
+alitrip.com
+
+# tencent
+qq.com
+tencent.com
+weixin.com
+idqqimg.com
+imtmp.net
+
+# cdn for douyin and xigua shit
+snssdk.com
+ixigua.com
+pstatp.com
+toutiao.com
+
+
+@end
