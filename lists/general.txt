@@ -18,8 +18,3 @@ microsoft.com
 live.com
 
 @end
-
-# All direct IP requests go direct, no proxy.
-@begin ip-cidr direct
-0.0.0.0/0
-@end
