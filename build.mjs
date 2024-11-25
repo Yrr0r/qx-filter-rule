@@ -69,6 +69,13 @@ function parse(instr){
 fs.mkdirSync('./public/list', {recursive: true})
 fs.mkdirSync('./public/multi', {recursive:true})
 
+// copy static files
+let assets = fs.readdirSync('./assets')
+console.log('Assets:', assets)
+for(let each of assets){
+	fs.copyFileSync('./assets/'+each, './public/'+each)
+}
+
 // build single lists
 let listfiles = fs.readdirSync('./lists')
 console.log('ListFiles:',listfiles)
