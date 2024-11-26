@@ -45,15 +45,21 @@ function parse(instr){
 				curpostfix = positions[2];
 				continue;
 			}
+			if (1){
+				// no syntax used, just pass the line through
+				output += currline + '\n';
+			}
 		}
 		if(state == 1){
 			if(currline == '@end'){
+				// hitting the end keyword
 				state = 0; // jump state and clear variables
 				curprefix = '';
 				curpostfix = '';
 				continue;
 			} 
 			if (1) {
+				// not hitting the end word, keep processing each
 				output += curprefix + ',' + currline + ',' + curpostfix;
 				output += '\n';
 				continue;
@@ -85,7 +91,7 @@ for(let each of listfiles){
 	//console.log(parse(f))
 }
 
-/* wont use until next update
+/* todo: combine list files
 
 // building multiple lists
 let linkfiles = fs.readdirSync('./multi');

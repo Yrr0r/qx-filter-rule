@@ -1,0 +1,76 @@
+# sve1r's backCN list, using my syntax
+
+# (Video)
+# AcFun
+user-agent,AcFun*,proxy
+host-suffix,acfun.cn,proxy
+host-suffix,acfun.com,proxy
+host-suffix,aixifan.com,proxy
+# > bilibili
+user-agent,bili-universal,proxy
+user-agent,Bilibili*,proxy
+host-suffix,acgvideo.com,proxy
+host-suffix,bilibili.com,proxy
+host-suffix,hdslb.com,proxy
+# > HunanTV
+user-agent,MGTV*,proxy
+host-suffix,hitv.com,proxy
+host-suffix,hunantv.com,proxy
+host-suffix,mgtv.com,proxy
+# > Migu
+user-agent,MiguVideo*,proxy
+user-agent,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91,proxy
+host-suffix,cmvideo.cn,proxy
+host-suffix,migu.cn,proxy
+host-suffix,miguvideo.com,proxy
+# > iQiyi
+user-agent,iQiYi*,proxy
+user-agent,PPStream*,proxy
+user-agent,QIYI*,proxy
+user-agent,QYPlayer*,proxy
+host-suffix,iqiyi.com,proxy
+host-suffix,iqiyipic.com,proxy
+host-suffix,qy.net,proxy
+host-suffix,71.am,proxy
+  # > Sohu
+host-suffix,sohu.com,proxy
+host-suffix,sohu.com.cn,proxy
+host-suffix,itc.cn,proxy
+host-suffix,v-56.com,proxy
+  # > Tencent
+user-agent,live4iphone*,proxy
+user-agent,qqlive4iphone*,proxy
+user-agent,TencentMidasConnect*,proxy
+host-suffix,video.qq.com,proxy
+  # > Youku
+user-agent,Youku*,proxy
+user-agent,%E4%BC%98%E9%85%B7*,proxy
+host-suffix,soku.com,proxy
+host-suffix,youku.com,proxy
+host-suffix,ykimg.com,proxy
+
+  # (Music)
+  # > Alibaba
+user-agent,walkman*,proxy
+user-agent,xiami*,proxy
+host-suffix,xiami.com,proxy
+host-suffix,xiami.net,proxy
+  # > Netease
+user-agent,NeteaseMusic*,proxy
+user-agent,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,proxy
+host-suffix,music.126.net,proxy
+host-suffix,music.163.com,proxy
+  # > Tencent
+user-agent,MOO%E9%9F%B3%E4%B9%90*,proxy
+user-agent,QQ%E9%9F%B3%E4%B9%90,proxy
+host-suffix,qqmusic.qq.com,proxy
+host-suffix,y.qq.com,proxy
+host,aqqmusic.tc.qq.com,proxy
+  # Kugou and Kuwo
+host-suffix,kugou.com,proxy
+user-agent,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*,proxy
+host-suffix,kuwo.cn,proxy
+host-suffix,koowo.com,proxy
+  # > Baidu
+user-agent,baiduyinyue,proxy
+host-suffix,qianqian.com,proxy
