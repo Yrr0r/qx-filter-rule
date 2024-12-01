@@ -60,7 +60,16 @@ function parse(instr){
 			} 
 			if (1) {
 				// not hitting the end word, keep processing each
-				output += curprefix + ',' + currline + ',' + curpostfix;
+				if(currline.includes('#') == true){
+					// line contains comment, splitting the comment to end
+					let splited = currline.split('#', 2)
+					for(let each in splited) splited[each] = splited[each].trim();
+					output += curprefix + ',' + splited[0] + ',' + 
+						curpostfix + ' # ' + splited[1] 
+				} else {
+					// line contains no comment, no special care needed
+					output += curprefix + ',' + currline + ',' + curpostfix;
+				}
 				output += '\n';
 				continue;
 			}
