@@ -1,5 +1,8 @@
-# output directories
+# ignore build output directories
 public/
+
+# fuck apple shit
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

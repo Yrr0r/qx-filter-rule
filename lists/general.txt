@@ -1,14 +1,12 @@
 
 @begin host-suffix direct
 
-# *.cn
-cn
 
 # get apple back to china
 apple.com
 
 # icloud mail
-me.com 
+me.com
 
 # skype does not need proxy 
 skype.com

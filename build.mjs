@@ -60,7 +60,16 @@ function parse(instr){
 			} 
 			if (1) {
 				// not hitting the end word, keep processing each
-				output += curprefix + ',' + currline + ',' + curpostfix;
+				if(currline.includes('#') == true){
+					// line contains comment, Qx does not support inline comment
+					// Just drop that comment.
+					let splited = currline.split('#', 2)
+					for(let each in splited) splited[each] = splited[each].trim();
+					output += curprefix + ',' + splited[0] + ',' + curpostfix;  
+				} else {
+					// line contains no comment, no special care needed
+					output += curprefix + ',' + currline + ',' + curpostfix;
+				}
 				output += '\n';
 				continue;
 			}
