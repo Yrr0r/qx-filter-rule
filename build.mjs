@@ -84,21 +84,26 @@ for(let each of assets){
 
 // build single lists
 let listfiles = fs.readdirSync('./lists')
+let lists = {}
 console.log('ListFiles:',listfiles)
 for(let each of listfiles){
 	let f = fs.readFileSync('./lists/'+each, 'utf-8');
-	fs.writeFileSync('./public/list/'+each, parse(f), {flag:'w'})
+	let list = parse(f)
+	lists[each] = list
+	fs.writeFileSync('./public/list/'+each, list, {flag:'w'})
 	//console.log(parse(f))
 }
 
-/* todo: combine list files
-
 // building multiple lists
-let linkfiles = fs.readdirSync('./multi');
-console.log('Combination Directives:', linkfiles);
-for(let each of linkfiles){
-	let f = fs.readFileSync('./multi'+each, 'utf-8');
-
+let directivefile = fs.readFileSync('./Multilist.json');
+let directives = JSON.parse(directivefile)
+for(let each in directives){
+	let fullstr = ''
+	for(let i of directives[each]){
+		let fname = i + '.txt'
+		let list = lists[fname]
+		fullstr += '# Including: ' + fname + '\n'
+		fullstr += list + '\n'
+	}
+	fs.writeFileSync('./public/multi/'+each+'.txt', fullstr, {flag:'w'})
 }
-
-*/
