@@ -12,6 +12,9 @@ cmbchina.com # 招商银行
 # 缺德地图
 amap.com
 
+# 9批的深蓝互动（疑似重返1999的国际服）
+sl916.com
+
 # 什么煞笔玩意？火山引擎？
 volceapplog.com
 volcengine.com
