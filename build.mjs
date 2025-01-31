@@ -91,6 +91,12 @@ for(let each of assets){
 	fs.copyFileSync('./assets/'+each, './public/'+each)
 }
 
+// track info listing
+let infolist = {
+	lists: [],
+	multi: []
+}
+
 // build single lists
 let listfiles = fs.readdirSync('./lists')
 let lists = {}
@@ -100,6 +106,7 @@ for(let each of listfiles){
 	let list = parse(f)
 	lists[each] = list
 	fs.writeFileSync('./public/list/'+each, list, {flag:'w'})
+	infolist.lists.push( './public/list/'+each )
 	//console.log(parse(f))
 }
 
@@ -115,4 +122,9 @@ for(let each in directives){
 		fullstr += list + '\n'
 	}
 	fs.writeFileSync('./public/multi/'+each+'.txt', fullstr, {flag:'w'})
+	infolist.multi.push('./public/multi/'+each+'.txt')
 }
+
+// write tracking file
+let tracking = JSON.stringify(infolist, null, '\t')
+fs.writeFileSync('./public/tracking.json', tracking, {flag:'w'})

@@ -1,6 +1,10 @@
 # qx-filter-rule
 My QuanX filter rule
 
+# Tracking JSON Location
+Abs location: `./tracking.json`
+Link: [Findhere](https://quanx.yrr0r.net/tracking.json)
+
 # Format
 
 Define one-by-one:
@@ -26,4 +30,4 @@ Domain names for the rule. Wildcards like `*` is accepted.
 
 # How to subscribe
 - Do not subscribe to Github raw file, this repo now use a builder script.
-- When github cannot be accessed, a cached version is at my cloudflare site. The file structure is identical. 
+- Subscribe to the actual files in the directory. Refer to tracking location above.
