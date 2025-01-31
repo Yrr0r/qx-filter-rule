@@ -48,3 +48,6 @@ toutiao.com
 
 
 @end
+
+# GeoIP to China
+geoip, cn, direct
