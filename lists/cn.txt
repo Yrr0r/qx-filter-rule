@@ -37,6 +37,8 @@ tencent.com
 weixin.com
 idqqimg.com
 imtmp.net
+tencent-cloud.net
+qcloud.com
 
 # cdn for douyin and xigua shit
 snssdk.com
