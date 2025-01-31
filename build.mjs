@@ -126,5 +126,5 @@ for(let each in directives){
 }
 
 // write tracking file
-let tracking = JSON.stringify(infolist, null, '\t')
+let tracking = JSON.stringify(infolist, null, 2)
 fs.writeFileSync('./public/tracking.json', tracking, {flag:'w'})
