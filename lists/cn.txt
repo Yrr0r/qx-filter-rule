@@ -35,6 +35,7 @@ alitrip.com
 qq.com
 tencent.com
 weixin.com
+wechat.com
 idqqimg.com
 imtmp.net
 tencent-cloud.net
