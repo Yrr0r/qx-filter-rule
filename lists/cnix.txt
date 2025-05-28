@@ -1,0 +1,9 @@
+
+# CNIX special blocks
+
+@begin host-suffix direct
+
+# CNIX blocks .gov
+.gov
+
+@end
