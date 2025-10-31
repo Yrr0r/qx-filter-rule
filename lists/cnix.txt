@@ -4,6 +4,6 @@
 @begin host-suffix direct
 
 # CNIX blocks .gov
-.gov
+gov
 
 @end
