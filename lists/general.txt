@@ -16,3 +16,11 @@ microsoft.com
 live.com
 
 @end
+
+@begin host-suffix proxy
+
+# Get my Linkedin work with China
+linkedin.com
+linkedin.cn
+
+@end
