@@ -5,6 +5,10 @@
 # All of *.cn
 cn
 
+# Global CDN and services
+go-mpulse.net
+intercom.io
+
 # iCloud 直接访问
 icloud.com
 
