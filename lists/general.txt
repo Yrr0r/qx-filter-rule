@@ -24,3 +24,12 @@ linkedin.com
 linkedin.cn
 
 @end
+
+# Get Apple APNS to use overseas servers
+@begin ipcidr proxy
+17.249.0.0/16
+17.252.0.0/16
+17.57.144.0/22
+17.188.128.0/18
+17.188.20.0/23
+@end
