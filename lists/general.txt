@@ -1,10 +1,6 @@
 
 @begin host-suffix direct
 
-
-# get apple back to china
-apple.com
-
 # icloud mail
 me.com
 
@@ -26,6 +22,11 @@ linkedin.cn
 @end
 
 # Get Apple APNS to use overseas servers
+@begin host-suffix proxy
+push.apple.com
+akadns.net
+edgekey.net
+@end
 @begin ip-cidr proxy
 17.249.0.0/16
 17.252.0.0/16
